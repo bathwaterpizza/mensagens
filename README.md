@@ -35,6 +35,6 @@ if err != 0:
 
 # Documentação
 
-Esse módulo associa códigos de status à mensagens de erro na aplicação. Deve ser utilizado nos módulos internos, para se referir aos erros com a enum `Status`, e no módulo Principal, para exibir as mensagens de erro ao usuário, com `get_msg_status()`.
+Esse módulo associa códigos de status a mensagens de erro na aplicação. Deve ser utilizado nos módulos internos, para se referir aos erros com a enum `Status`, e no módulo Principal, para exibir as mensagens de erro ao usuário, com `get_msg_status()`.
 
 Lembrando que os códigos em `int` também são códigos de status válidos, a enum `Status` apenas deixa mais claro qual é o erro, dentro do código fonte.
