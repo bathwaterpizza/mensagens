@@ -52,6 +52,12 @@ class Status(Enum):
     FORMACAO_NAO_ATIVA = 42
     IMPOSSIVEL_ATUALIZAR_FALTAS_ONLINE = 43
     ERRO_ATUALIZACAO_FORMACAO = 44
+    TIPO_USUARIO_INVALIDO = 45
+    USUARIO_LOGIN_JA_EXISTE = 46
+    USUARIO_ID_JA_EXISTE = 47
+    USUARIO_ID_NAO_ENCONTRADO = 48
+    USUARIO_LOGIN_NAO_ENCONTRADO = 49
+    USUARIO_SENHA_INCORRETA = 50
 	
 _msg_status = {
     Status.OK: "Operação realizada com sucesso.",
@@ -99,6 +105,12 @@ _msg_status = {
     Status.FORMACAO_NAO_ATIVA: "Formação não está ativa.",
     Status.IMPOSSIVEL_ATUALIZAR_FALTAS_ONLINE: "Não é possível atualizar faltas de turmas online.",
     Status.ERRO_ATUALIZACAO_FORMACAO: "Erro na atualização da formação.",
+    Status.TIPO_USUARIO_INVALIDO: "Tipo de acesso para o usuário inválido.",
+    Status.USUARIO_LOGIN_JA_EXISTE: "Usuário com esse login já existe.",
+    Status.USUARIO_ID_JA_EXISTE: "Usuário com esse ID já existe.",
+    Status.USUARIO_ID_NAO_ENCONTRADO: "Usuário com esse ID não encontrado.",
+    Status.USUARIO_LOGIN_NAO_ENCONTRADO: "Usuário com esse login não encontrado.",
+    Status.USUARIO_SENHA_INCORRETA: "Senha incorreta para o login informado.",
 }
 
 def get_msg_status(codigo_status: Status | int) -> str:
