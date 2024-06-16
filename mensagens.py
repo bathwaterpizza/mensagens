@@ -55,7 +55,7 @@ class Status(Enum):
     TIPO_USUARIO_INVALIDO = 45
     USUARIO_LOGIN_JA_EXISTE = 46
     USUARIO_ID_JA_EXISTE = 47
-    USUARIO_ID_NAO_ENCONTRADO = 48
+    USUARIO_ID_TIPO_NAO_ENCONTRADO = 48
     USUARIO_LOGIN_NAO_ENCONTRADO = 49
     USUARIO_SENHA_INCORRETA = 50
 	
@@ -107,8 +107,8 @@ _msg_status = {
     Status.ERRO_ATUALIZACAO_FORMACAO: "Erro na atualização da formação.",
     Status.TIPO_USUARIO_INVALIDO: "Tipo de acesso para o usuário inválido.",
     Status.USUARIO_LOGIN_JA_EXISTE: "Usuário com esse login já existe.",
-    Status.USUARIO_ID_JA_EXISTE: "Usuário com esse ID já existe.",
-    Status.USUARIO_ID_NAO_ENCONTRADO: "Usuário com esse ID não encontrado.",
+    Status.USUARIO_ID_JA_EXISTE: "Usuário desse tipo com esse ID já existe.",
+    Status.USUARIO_ID_TIPO_NAO_ENCONTRADO: "Usuário com esse ID e tipo não encontrado.",
     Status.USUARIO_LOGIN_NAO_ENCONTRADO: "Usuário com esse login não encontrado.",
     Status.USUARIO_SENHA_INCORRETA: "Senha incorreta para o login informado.",
 }
