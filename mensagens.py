@@ -58,6 +58,8 @@ class Status(Enum):
     USUARIO_ID_TIPO_NAO_ENCONTRADO = 48
     USUARIO_LOGIN_NAO_ENCONTRADO = 49
     USUARIO_SENHA_INCORRETA = 50
+    CURSO_NAO_CONCLUIDO = 51
+    AVALIACAO_ID_NAO_ENCONTRADA = 52
 	
 _msg_status = {
     Status.OK: "Operação realizada com sucesso.",
@@ -111,6 +113,8 @@ _msg_status = {
     Status.USUARIO_ID_TIPO_NAO_ENCONTRADO: "Usuário com esse ID e tipo não encontrado.",
     Status.USUARIO_LOGIN_NAO_ENCONTRADO: "Usuário com esse login não encontrado.",
     Status.USUARIO_SENHA_INCORRETA: "Senha incorreta para o login informado.",
+    Status.CURSO_NAO_CONCLUIDO: "Curso não foi concluído.",
+    Status.AVALIACAO_ID_NAO_ENCONTRADA: "Avaliação com id_avaliacao não encontrada para criar uma resposta",
 }
 
 def get_msg_status(codigo_status: Status | int) -> str:
