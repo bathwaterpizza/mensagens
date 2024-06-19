@@ -60,6 +60,13 @@ class Status(Enum):
     USUARIO_SENHA_INCORRETA = 50
     CURSO_NAO_CONCLUIDO = 51
     AVALIACAO_ID_NAO_ENCONTRADA = 52
+    AVAL_JA_EXISTE_NO_CRITERIO = 53
+    AVAL_NAO_EXISTE_NO_CRITERIO = 54
+    CRITERIO_NAO_EXISTE = 55
+    AVAL_NUMERO_PERG_RESP_DIFF = 56
+    AVAL_SEM_PERGUNTAS = 57
+    NOME_OU_BAIRRO_EXISTENTE = 58
+    NENHUMA_FILIAL_ASSOCIADA = 59
 	
 _msg_status = {
     Status.OK: "Operação realizada com sucesso.",
@@ -114,7 +121,14 @@ _msg_status = {
     Status.USUARIO_LOGIN_NAO_ENCONTRADO: "Usuário com esse login não encontrado.",
     Status.USUARIO_SENHA_INCORRETA: "Senha incorreta para o login informado.",
     Status.CURSO_NAO_CONCLUIDO: "Curso não foi concluído.",
-    Status.AVALIACAO_ID_NAO_ENCONTRADA: "Avaliação com id_avaliacao não encontrada para criar uma resposta",
+    Status.AVALIACAO_ID_NAO_ENCONTRADA: "Avaliação com id_avaliacao não encontrada para criar uma resposta.",
+    Status.AVAL_JA_EXISTE_NO_CRITERIO: "Avaliação já existe no critério.",
+    Status.AVAL_NAO_EXISTE_NO_CRITERIO: "Avaliação não existe no critério.",
+    Status.CRITERIO_NAO_EXISTE: "Critério não existe.",
+    Status.AVAL_NUMERO_PERG_RESP_DIFF: "Número de perguntas e respostas diferente na avaliação.",
+    Status.AVAL_SEM_PERGUNTAS: "Avaliação não possui nenhuma pergunta.",
+    Status.NOME_OU_BAIRRO_EXISTENTE: "Nome ou bairro da nova filial já existente.",
+    Status.NENHUMA_FILIAL_ASSOCIADA: "Nenhuma filial associada a essa turma.",
 }
 
 def get_msg_status(codigo_status: Status | int) -> str:
